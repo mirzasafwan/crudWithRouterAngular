@@ -1,0 +1,59 @@
+<p>update-employee works!</p>
+<h2>Update Your Self</h2>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update User</title>
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="text-center">User Registration</h3>
+          </div>
+          <div class="card-body">
+            <!-- Registration Form -->
+            <form>
+              <div class="form-group">
+                <label for="username">First Name</label>
+                <input type="text" name="firstName" class="form-control" id="username" placeholder="Enter username"
+                  [(ngModel)]="empl.firstName">
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Enter lastName"
+                  [(ngModel)]="empl.lastName">
+              </div>
+              <div class="form-group">
+                <label for="emailId">Email</label>
+                <input type="emailId" name="emailId" class="form-control" id="emailId" placeholder="Enter email"
+                  [(ngModel)]="empl.emailId">
+              </div>
+
+              <button type="button" class="btn btn-primary" (click)="updateEmployee()">Update Employee</button>
+
+            </form>
+            <!-- End of Registration Form -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Bootstrap JS -->
+  <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
